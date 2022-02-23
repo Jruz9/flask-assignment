@@ -1,0 +1,23 @@
+{% extends '_layouts.html' %}
+
+<h1>register</h1>
+
+<p> Use the following form to register fro a stuedent organizaion</p>
+
+<form action="/registered"method="post">
+    <div>
+    <label for="name" class="form-label">Name</label>
+    <input type="text" name="name" id="name" autocomplete="off">
+
+    <!-- <label for="orginization" class="form-label">organizaion</label> -->
+    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <option selected>organizaion</option>
+        <option value="1">dragons</option>
+        <option value="2">tigers</option>
+        <option value="3">zebras</option>
+        <option value="4">bears</option>
+        <option value="5">bulls</option>
+    </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
