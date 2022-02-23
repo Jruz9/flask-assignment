@@ -1,0 +1,20 @@
+{% extends '_layouts.html' %}
+
+
+{% block body %}
+
+
+<h1>Home</h1>
+
+<p> Enter an integer to find out if it is even or odd</p>
+<form action="/calculate"method="post">
+    <div>
+    <label for="number" class="form-label">number</label>
+    <input type="text" name="number" id="number" autocomplete="off">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+{% endblock %}
